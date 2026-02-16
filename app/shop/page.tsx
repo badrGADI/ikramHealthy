@@ -7,7 +7,9 @@ import { PRODUCTS } from '@/lib/constants';
 import { Category, SubCategory } from '@/lib/types';
 import { useCart } from '@/context/CartContext';
 
-export default function ShopPage() {
+import { Suspense } from 'react';
+
+function ShopContent() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get('category');
   
@@ -111,5 +113,13 @@ export default function ShopPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function ShopPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Chargement...</div>}>
+      <ShopContent />
+    </Suspense>
   );
 }

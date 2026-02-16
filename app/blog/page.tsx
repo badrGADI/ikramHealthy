@@ -1,0 +1,29 @@
+import { BLOG_POSTS } from '@/lib/constants';
+
+export default function BlogPage() {
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-20 animate-in fade-in duration-500">
+      <h1 className="text-5xl font-serif text-stone-800 mb-20 text-center">Conseils & Lifestyle</h1>
+      <div className="space-y-24">
+        {BLOG_POSTS.map(post => (
+          <article key={post.id} className="group cursor-pointer">
+            <div className="overflow-hidden rounded-[2.5rem] mb-10 aspect-video shadow-lg relative bg-gradient-to-br from-emerald-600 to-green-700">
+              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-emerald-700 shadow-sm">
+                {post.date}
+              </div>
+            </div>
+            <div className="px-4">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-800 mb-6 group-hover:text-emerald-700 transition-colors leading-tight">
+                {post.title}
+              </h2>
+              <p className="text-stone-500 leading-relaxed mb-8 text-lg">{post.excerpt}</p>
+              <button className="text-emerald-700 font-bold border-b-2 border-emerald-700 pb-1 hover:border-emerald-400 transition-all uppercase text-xs tracking-widest">
+                Lire la suite
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}

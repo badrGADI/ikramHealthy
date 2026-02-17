@@ -14,7 +14,7 @@ export default function CategoryGrid() {
             className="group relative h-96 rounded-[3rem] overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-700"
           >
             <Image 
-              src="https://images.unsplash.com/photo-1533777857419-377a723f096c?auto=format&fit=crop&q=80&w=800"
+              src="/images/product-keto-cake.jpg"
               alt="Healthy Snacks"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -29,7 +29,7 @@ export default function CategoryGrid() {
             className="group relative h-96 rounded-[3rem] overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-700"
           >
             <Image 
-              src="https://images.unsplash.com/photo-1622484210921-39719398864d?auto=format&fit=crop&q=80&w=800"
+              src="/images/blog-smoothie.jpg"
               alt="Juices & Smoothies"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -44,7 +44,7 @@ export default function CategoryGrid() {
             className="group relative h-96 rounded-[3rem] overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-700"
           >
             <Image 
-              src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&q=80&w=800"
+              src="/images/category-complements-v2.jpg"
               alt="Healthy Complements"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutPage() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-2 duration-700">
@@ -19,7 +21,14 @@ export default function AboutPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
           <div className="w-full md:w-1/2">
-            <div className="rounded-[3rem] shadow-2xl w-full h-[500px] bg-gradient-to-br from-emerald-600 to-green-700"></div>
+            <div className="relative w-full h-[500px]">
+              <Image 
+                src="/images/about-mission.jpg"
+                alt="Healthy Food Mission"
+                fill
+                className="rounded-[3rem] shadow-2xl object-cover"
+              />
+            </div>
           </div>
           <div className="w-full md:w-1/2 space-y-8">
             <h2 className="text-4xl font-serif text-stone-800">Notre Mission</h2>

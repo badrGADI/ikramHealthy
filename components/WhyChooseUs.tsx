@@ -39,10 +39,10 @@ export default function WhyChooseUs() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 relative">
+          <div className="lg:w-1/2 relative w-full h-[500px]">
             <div className="absolute -inset-4 bg-emerald-100/50 rounded-[3rem] -z-10 blur-2xl"></div>
             <Image 
-              src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=800"
+              src="/images/why-choose-us.jpg"
               alt="Healthy Meal"
               fill
               className="rounded-[2.5rem] shadow-2xl w-full object-cover"

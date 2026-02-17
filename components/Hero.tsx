@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="relative h-[85vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image 
-          src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80&w=2000"
+          src="/images/hero-bg.jpg"
           alt="Healthy Food Hero"
           fill
           className="object-cover brightness-[0.45]"

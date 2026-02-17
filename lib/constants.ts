@@ -10,7 +10,7 @@ export const PRODUCTS: Product[] = [
     price: 25,
     description: 'Sugar-free oatmeal muffins with dark chocolate chips.',
     fullDescription: 'Nos muffins à l\'avoine et pépites de chocolat noir sont le goûter idéal pour satisfaire vos envies sucrées sans culpabilité. Préparés sans sucre raffiné, ils utilisent la douceur naturelle des fruits et le croquant du chocolat noir à 70%. Parfait pour un petit-déjeuner sur le pouce ou une collation saine.',
-    image: 'https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-muffin.jpg',
     nutrition: { calories: 180, protein: '5g', fiber: '4g', carbs: '22g', fats: '8g' },
     ingredients: [
       { name: 'Flocons d\'avoine', amount: '40g', benefit: 'Riche en fibres et énergie lente' },
@@ -27,7 +27,7 @@ export const PRODUCTS: Product[] = [
     price: 45,
     description: 'Pack of 6 energy balls made with dates, almonds, and cocoa.',
     fullDescription: 'Un concentré d\'énergie pure dans une petite boule savoureuse. Nos Energy Balls sont pressées à froid pour conserver toutes les vitamines. Sans cuisson, sans gluten et véganes, elles sont le partenaire idéal de vos séances de sport ou de vos journées bien remplies.',
-    image: 'https://images.unsplash.com/photo-1604423043492-4130f94c1629?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-energy-balls.jpg',
     nutrition: { calories: 120, protein: '3g', fiber: '2g', carbs: '15g', fats: '6g' },
     ingredients: [
       { name: 'Dattes Medjool', amount: '20g', benefit: 'Énergie rapide naturelle' },
@@ -44,7 +44,7 @@ export const PRODUCTS: Product[] = [
     price: 15,
     description: 'Crunchy granola bar with organic honey and mixed nuts.',
     fullDescription: 'Nos barres de granola artisanales sont cuites lentement au four avec du miel de l\'Atlas pour obtenir ce croquant parfait. Contrairement aux barres industrielles, nous n\'utilisons aucun sirop de glucose, seulement des ingrédients nobles.',
-    image: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-granola-bar.jpg',
     nutrition: { calories: 150, protein: '4g', fiber: '3g', carbs: '18g', fats: '7g' },
     ingredients: [
       { name: 'Avoine entière', amount: '35g', benefit: 'Satiété durable' },
@@ -61,7 +61,7 @@ export const PRODUCTS: Product[] = [
     price: 35,
     description: 'Freshly pressed kale, spinach, green apple, and ginger.',
     fullDescription: 'Pressé à froid chaque matin, notre jus Green Detox est une véritable bombe de nutriments. Le gingembre apporte une note épicée qui réveille le métabolisme tandis que les épinards et le chou kale purifient votre système digestif.',
-    image: 'https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-green-juice.jpg',
     nutrition: { calories: 95, protein: '2g', fiber: '1g', carbs: '12g', fats: '0g' },
     ingredients: [
       { name: 'Pomme Verte', amount: '150ml', benefit: 'Vitamines et fraîcheur' },
@@ -78,7 +78,7 @@ export const PRODUCTS: Product[] = [
     price: 120,
     description: 'Gluten-free, sugar-free cake made with almond flour and walnuts.',
     fullDescription: 'Le plaisir du gâteau sans les glucides. Notre Keto Walnut Cake est spécialement conçu pour ceux qui suivent un régime cétogène ou surveillent leur glycémie. Une texture fondante et un goût riche en noix.',
-    image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-keto-cake.jpg',
     nutrition: { calories: 320, protein: '10g', fiber: '6g', carbs: '4g', fats: '28g' },
     ingredients: [
       { name: 'Farine d\'Amande', amount: '60g', benefit: 'Faible indice glycémique' },
@@ -95,7 +95,7 @@ export const PRODUCTS: Product[] = [
     price: 30,
     description: 'Soft-baked cookies made with 100% natural peanut butter.',
     fullDescription: 'Pour les amoureux du beurre de cacahuète. Ces cookies sont riches en protéines végétales et offrent une texture à la fois croquante et fondante.',
-    image: 'https://images.unsplash.com/photo-1499636138143-bd630f5cf38a?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-cookies.jpg',
     nutrition: { calories: 160, protein: '6g', fiber: '2g', carbs: '14g', fats: '9g' },
     ingredients: [
       { name: 'Beurre de cacahuète pur', amount: '25g', benefit: 'Protéines et bonnes graisses' },
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
     price: 65,
     description: 'Large bag of toasted oats with pumpkin seeds, chia, and flax.',
     fullDescription: 'Le mélange parfait pour vos bowls. Notre Super Seed Granola regroupe les meilleures graines pour un apport complet en minéraux et vitamines dès le matin.',
-    image: 'https://images.unsplash.com/photo-1517093720242-0e01e96cb6f6?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-granola-bag.jpg',
     nutrition: { calories: 240, protein: '7g', fiber: '9g', carbs: '28g', fats: '12g' },
     ingredients: [
       { name: 'Graines de courge', amount: '10g', benefit: 'Riche en Zinc' },
@@ -127,7 +127,7 @@ export const PRODUCTS: Product[] = [
     price: 40,
     description: 'Mixed berries, Greek yogurt, and chia seeds.',
     fullDescription: 'Un smoothie onctueux et rafraîchissant. Le Berry Blast est riche en antioxydants et en probiotiques grâce au yaourt grec, idéal pour la récupération après l\'effort.',
-    image: 'https://images.unsplash.com/photo-1623065422902-305ed54e8f8a?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-berry-smoothie.jpg',
     nutrition: { calories: 210, protein: '8g', fiber: '5g', carbs: '24g', fats: '4g' },
     ingredients: [
       { name: 'Framboises & Myrtilles', amount: '100g', benefit: 'Antioxydants' },
@@ -143,7 +143,7 @@ export const PRODUCTS: Product[] = [
     price: 85,
     description: 'Pure, raw honey from the Middle Atlas mountains.',
     fullDescription: 'Récolté de manière traditionnelle, ce miel d\'eucalyptus est réputé pour ses vertus respiratoires et son goût boisé unique. Un complément santé indispensable dans votre cuisine.',
-    image: 'https://images.unsplash.com/photo-1587049352851-8d4e8918dcf1?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-honey.jpg',
     nutrition: { calories: 60, protein: '0g', fiber: '0g', carbs: '17g', fats: '0g' },
     ingredients: [
       { name: 'Miel pur d\'Eucalyptus', amount: '100%', benefit: 'Santé respiratoire' }
@@ -157,7 +157,7 @@ export const PRODUCTS: Product[] = [
     price: 50,
     description: 'High-quality organic chia seeds, perfect for puddings.',
     fullDescription: 'Ces petites graines sont l\'un des superaliments les plus puissants au monde. Riches en fibres et en omega-3, elles se transforment en gel au contact de l\'eau, parfait pour des puddings healthy.',
-    image: 'https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-chia-seeds.jpg',
     nutrition: { calories: 130, protein: '5g', fiber: '10g', carbs: '12g', fats: '9g' },
     ingredients: [
       { name: 'Graines de Chia Bio', amount: '100%', benefit: 'Santé cardiaque et digestive' }
@@ -171,7 +171,7 @@ export const PRODUCTS: Product[] = [
     price: 119,
     description: 'Repas hypocaloriques équilibrés pour mincir durablement.',
     fullDescription: 'Notre programme minceur est conçu pour créer un déficit calorique sain tout en vous apportant tous les micronutriments nécessaires. Oubliez la fatigue des régimes classiques.',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-weight-loss.jpg',
     nutrition: { calories: 1400, protein: '120g', fiber: '35g', carbs: '130g', fats: '45g' },
     ingredients: [
       { name: 'Légumes de saison', amount: 'Abondant', benefit: 'Vitamines et satiété' },
@@ -186,7 +186,7 @@ export const PRODUCTS: Product[] = [
     price: 119,
     description: 'Riche en protéines et glucides complexes pour le muscle.',
     fullDescription: 'Pour ceux qui s\'entraînent dur. Ce programme apporte le surplus calorique nécessaire à la construction musculaire sans ajout de mauvaises graisses.',
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-muscle-gain.jpg',
     nutrition: { calories: 2800, protein: '180g', fiber: '25g', carbs: '350g', fats: '75g' },
     ingredients: [
       { name: 'Glucides complexes', amount: 'Elevé', benefit: 'Carburant pour l\'effort' },
@@ -201,7 +201,7 @@ export const PRODUCTS: Product[] = [
     price: 119,
     description: 'L\'équilibre parfait pour garder la forme au quotidien.',
     fullDescription: 'Le programme standard pour ceux qui veulent simplement manger mieux sans se soucier du calcul des calories. Équilibré, varié et délicieux.',
-    image: 'https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-vitality.jpg',
     nutrition: { calories: 2000, protein: '100g', fiber: '30g', carbs: '250g', fats: '65g' },
     ingredients: [
       { name: 'Ingrédients variés', amount: 'Équilibré', benefit: 'Santé globale' }
@@ -220,17 +220,35 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Discover why choosing natural snacks over processed ones can change your energy levels...',
     content: 'Full content about energy, digestion, and long-term health benefits.',
     date: 'Oct 12, 2025',
-    image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=800',
+    image: '/images/blog-snacks.jpg',
     author: 'Dr. Sarah Wellness'
   },
   {
     id: 'b2',
     title: 'The Best Time to Drink Your Smoothie',
     excerpt: 'Is it better in the morning or post-workout? We dive into the science of nutrient absorption.',
-    content: 'Full content about metabolism and insulin sensitivity.',
+    content: "Post-workout nutrition is crucial for recovery. Drinking a smoothie rich in protein and carbohydrates within 30 minutes of exercising can significantly enhance muscle repair and glycogen replenishment.\n\nHowever, a morning smoothie can also kickstart your metabolism and provide sustained energy throughout the day. The key is to tailor your ingredients to your specific goals.",
     date: 'Oct 15, 2025',
-    image: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&q=80&w=800',
+    image: '/images/blog-smoothie.jpg',
     author: 'Chef Healthy'
+  },
+  {
+    id: 'b3',
+    title: 'Superfoods: Why Honey & Nuts are Essential',
+    excerpt: 'Unlock the power of natural energy boosters. A deep dive into the benefits of raw honey and almonds.',
+    content: "Raw honey is not just a sweetener; it's a powerhouse of antioxidants and enzymes. When paired with nuts like almonds or walnuts, it creates a perfect balance of healthy fats, protein, and carbohydrates.\n\nThis combination provides a steady release of energy, preventing the crash associated with processed sugars. Ideally consumed as a mid-afternoon snack.",
+    date: 'Oct 20, 2025',
+    image: '/images/category-complements-v2.jpg',
+    author: 'NutriExpert'
+  },
+  {
+    id: 'b4',
+    title: 'Detox Juices: Myth or Reality?',
+    excerpt: 'Can a juice cleanse really reset your body? We separate fact from fiction in this green juice guide.',
+    content: "The concept of 'detoxing' implies that our bodies need help removing toxins. While our liver and kidneys do this naturally, a juice cleanse can give your digestive system a break and flood your body with micronutrients.\n\nGreen juices, in particular, are packed with chlorophyll, which supports liver function and boosts oxygen transport in the blood.",
+    date: 'Oct 25, 2025',
+    image: '/images/category-juices-v2.jpg',
+    author: 'Dr. Sarah Wellness'
   }
 ];
 

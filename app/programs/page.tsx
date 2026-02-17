@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { PRODUCTS } from '@/lib/constants';
 import { Category } from '@/lib/types';
 
@@ -22,7 +23,12 @@ export default function ProgramsPage() {
         {programProducts.map(p => (
           <div key={p.id} className="bg-white rounded-[2.5rem] shadow-xl overflow-hidden border border-stone-50 group flex flex-col hover:shadow-2xl transition-all duration-500">
             <div className="relative h-72">
-              <div className="w-full h-full bg-gradient-to-br from-emerald-600 to-green-700"></div>
+              <Image 
+                src={p.image}
+                alt={p.name}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               <div className="absolute bottom-8 left-8 text-white">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400 mb-2">{p.subCategory}</p>

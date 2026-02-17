@@ -20,7 +20,7 @@ export default function Programs() {
             <div key={p.id} className="group bg-white/5 backdrop-blur-md rounded-[2.5rem] border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:shadow-2xl">
               <div className="h-64 relative overflow-hidden">
                 {/* Placeholder image until we have real ones, using a solid color div if image fails or just the image component */}
-                <div className="absolute inset-0 bg-emerald-800 animate-pulse" />
+
                 {/* 
                    Using a placeholder from Unsplash that matches the context if the local image is missing 
                    For now, we will assume the local image paths exist or will be added. 
@@ -33,7 +33,7 @@ export default function Programs() {
                    I will use `p.image` but beware they might be 404.
                 */}
                 <Image 
-                  src={p.image.startsWith('/') ? p.image : '/images/placeholder.jpg'} 
+                  src={p.image} 
                   alt={p.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-1000"

@@ -42,7 +42,15 @@ export default function ProductDetailsPage({ params }: { params: Promise<{ id: s
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-32">
         <div className="relative group">
           <div className="absolute -inset-4 bg-emerald-50 rounded-[4rem] -z-10 group-hover:scale-105 transition-transform duration-700"></div>
-          <div className="w-full aspect-square rounded-[3.5rem] shadow-2xl bg-gradient-to-br from-emerald-600 to-green-700"></div>
+          <div className="relative w-full aspect-square rounded-[3.5rem] shadow-2xl overflow-hidden">
+             <Image 
+              src={product.image}
+              alt={product.name}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
         
         <div className="flex flex-col justify-center">

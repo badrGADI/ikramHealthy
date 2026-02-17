@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BLOG_POSTS } from '@/lib/constants';
+import { getAllPosts } from '@/lib/blog';
 
 export default function BlogPage() {
+  const posts = getAllPosts();
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-20 animate-in fade-in duration-500">
       <h1 className="text-5xl font-serif text-stone-800 mb-20 text-center">Conseils & Lifestyle</h1>
       <div className="space-y-24">
-        {BLOG_POSTS.map(post => (
+        {posts.map(post => (
           <Link href={`/blog/${post.id}`} key={post.id} className="group cursor-pointer block">
             <article>
               <div className="overflow-hidden rounded-[2.5rem] mb-10 aspect-video shadow-lg relative">

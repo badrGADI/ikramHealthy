@@ -11,6 +11,10 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'HealthyBite Morocco - Premium Healthy Snacks & Juices',
   description: 'Snacks artisanaux, jus frais pressés à froid et programmes nutritionnels sur-mesure livrés à Rabat et partout au Maroc.',
+  icons: {
+    icon: '/icon.png',
+    apple: '/icon.png',
+  },
 };
 
 export default function RootLayout({

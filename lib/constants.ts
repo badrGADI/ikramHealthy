@@ -213,44 +213,7 @@ export const PARTNERS = [
   "Moroccan Throwdown", "Inno Fashion", "Millenium", "Green Challenge", "Urbanbox", "Les Maisons Indigo"
 ];
 
-export const BLOG_POSTS: BlogPost[] = [
-  {
-    id: 'b1',
-    title: '5 Benefits of Switching to Healthy Snacks',
-    excerpt: 'Discover why choosing natural snacks over processed ones can change your energy levels...',
-    content: 'Full content about energy, digestion, and long-term health benefits.',
-    date: 'Oct 12, 2025',
-    image: '/images/blog-snacks.jpg',
-    author: 'Dr. Sarah Wellness'
-  },
-  {
-    id: 'b2',
-    title: 'The Best Time to Drink Your Smoothie',
-    excerpt: 'Is it better in the morning or post-workout? We dive into the science of nutrient absorption.',
-    content: "Post-workout nutrition is crucial for recovery. Drinking a smoothie rich in protein and carbohydrates within 30 minutes of exercising can significantly enhance muscle repair and glycogen replenishment.\n\nHowever, a morning smoothie can also kickstart your metabolism and provide sustained energy throughout the day. The key is to tailor your ingredients to your specific goals.",
-    date: 'Oct 15, 2025',
-    image: '/images/blog-smoothie.jpg',
-    author: 'Chef Healthy'
-  },
-  {
-    id: 'b3',
-    title: 'Superfoods: Why Honey & Nuts are Essential',
-    excerpt: 'Unlock the power of natural energy boosters. A deep dive into the benefits of raw honey and almonds.',
-    content: "Raw honey is not just a sweetener; it's a powerhouse of antioxidants and enzymes. When paired with nuts like almonds or walnuts, it creates a perfect balance of healthy fats, protein, and carbohydrates.\n\nThis combination provides a steady release of energy, preventing the crash associated with processed sugars. Ideally consumed as a mid-afternoon snack.",
-    date: 'Oct 20, 2025',
-    image: '/images/category-complements-v2.jpg',
-    author: 'NutriExpert'
-  },
-  {
-    id: 'b4',
-    title: 'Detox Juices: Myth or Reality?',
-    excerpt: 'Can a juice cleanse really reset your body? We separate fact from fiction in this green juice guide.',
-    content: "The concept of 'detoxing' implies that our bodies need help removing toxins. While our liver and kidneys do this naturally, a juice cleanse can give your digestive system a break and flood your body with micronutrients.\n\nGreen juices, in particular, are packed with chlorophyll, which supports liver function and boosts oxygen transport in the blood.",
-    date: 'Oct 25, 2025',
-    image: '/images/category-juices-v2.jpg',
-    author: 'Dr. Sarah Wellness'
-  }
-];
+
 
 export const TESTIMONIALS = [
   {

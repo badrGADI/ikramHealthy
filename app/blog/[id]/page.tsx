@@ -1,14 +1,12 @@
-'use client';
-
-import { use } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BLOG_POSTS } from '@/lib/constants';
+import { getPostById } from '@/lib/blog';
+import { MDXRemote } from 'next-mdx-remote/rsc';
 
-export default function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
-  const post = BLOG_POSTS.find(p => p.id === id);
+export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const post = getPostById(id);
 
   if (!post) {
     notFound();
@@ -52,9 +50,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
              {post.excerpt}
            </p>
            <div className="text-stone-500 leading-loose space-y-6">
-             {post.content.split('\n').map((paragraph, idx) => (
-               <p key={idx}>{paragraph}</p>
-             ))}
+             <MDXRemote source={post.content} />
            </div>
         </div>
       </article>

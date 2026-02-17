@@ -14,7 +14,7 @@ export default function RecommendedProductCard({ product }: RecommendedProductCa
   const { addToCart } = useCart();
 
   return (
-    <div className="group relative bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-700 border border-stone-100 flex flex-col lg:flex-row h-full lg:h-72">
+    <div className="group relative bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-700 border border-stone-100 flex flex-col lg:flex-row h-full lg:h-80">
       {/* Visual Side */}
       <Link 
         href={`/products/${product.id}`}

@@ -4,6 +4,7 @@ export const PRODUCTS: Product[] = [
   // --- SNACKS ---
   {
     id: 's1',
+    slug: 'oatmeal-choco-muffin',
     name: 'Oatmeal Choco Muffin',
     category: Category.SNACKS,
     subCategory: SubCategory.MUFFIN,
@@ -21,6 +22,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 's2',
+    slug: 'almond-energy-balls',
     name: 'Almond Energy Balls',
     category: Category.SNACKS,
     subCategory: SubCategory.ENERGY_BALLS,
@@ -38,6 +40,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 's3',
+    slug: 'honey-nut-granola-bar',
     name: 'Honey Nut Granola Bar',
     category: Category.SNACKS,
     subCategory: SubCategory.GRANOLA_BAR,
@@ -55,6 +58,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'b1',
+    slug: 'green-detox-juice',
     name: 'Green Detox Juice',
     category: Category.BEVERAGES,
     subCategory: SubCategory.JUICE,
@@ -72,6 +76,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 's4',
+    slug: 'keto-walnut-cake',
     name: 'Keto Walnut Cake',
     category: Category.SNACKS,
     subCategory: SubCategory.CAKE,
@@ -89,6 +94,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 's5',
+    slug: 'peanut-butter-cookies',
     name: 'Peanut Butter Cookies',
     category: Category.SNACKS,
     subCategory: SubCategory.COOKIES,
@@ -105,6 +111,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 's6',
+    slug: 'super-seed-granola',
     name: 'Super Seed Granola',
     category: Category.SNACKS,
     subCategory: SubCategory.GRANOLA,
@@ -121,6 +128,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'b2',
+    slug: 'berry-blast-smoothie',
     name: 'Berry Blast Smoothie',
     category: Category.BEVERAGES,
     subCategory: SubCategory.SMOOTHIE,
@@ -137,6 +145,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'c1',
+    slug: 'organic-eucalyptus-honey',
     name: 'Organic Eucalyptus Honey',
     category: Category.COMPLIMENTS,
     subCategory: SubCategory.HONEY,
@@ -151,6 +160,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'c2',
+    slug: 'raw-chia-seeds',
     name: 'Raw Chia Seeds',
     category: Category.COMPLIMENTS,
     subCategory: SubCategory.SUPERFOOD,
@@ -165,6 +175,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p1',
+    slug: 'programme-perte-de-poids',
     name: 'Programme Perte de Poids',
     category: Category.PROGRAM,
     subCategory: SubCategory.WEIGHT_LOSS,
@@ -180,6 +191,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p2',
+    slug: 'programme-prise-de-masse',
     name: 'Programme Prise de Masse',
     category: Category.PROGRAM,
     subCategory: SubCategory.MUSCLE_GAIN,
@@ -195,6 +207,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p3',
+    slug: 'programme-vitalite',
     name: 'Programme Vitalité',
     category: Category.PROGRAM,
     subCategory: SubCategory.HEALTHY_LIVING,

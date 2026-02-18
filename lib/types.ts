@@ -32,6 +32,7 @@ export interface Ingredient {
 
 export interface Product {
   id: string;
+  slug: string;
   name: string;
   category: Category;
   subCategory: SubCategory;

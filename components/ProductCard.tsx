@@ -13,7 +13,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
   return (
     <div className="group bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-stone-100 flex flex-col h-full">
       <Link 
-        href={`/products/${product.id}`}
+        href={`/products/${product.slug || product.id}`}
         className="relative aspect-square overflow-hidden cursor-pointer"
       >
         <Image 
@@ -32,7 +32,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
             <span className="text-[9px] uppercase tracking-[0.2em] text-emerald-600 font-bold mb-1.5 block">
               {product.subCategory}
             </span>
-            <Link href={`/products/${product.id}`}>
+            <Link href={`/products/${product.slug || product.id}`}>
               <h3 className="text-xl font-serif font-bold text-stone-800 group-hover:text-emerald-700 transition-colors line-clamp-1 cursor-pointer">
                 {product.name}
               </h3>
@@ -54,7 +54,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
             <span>Ajouter au panier</span>
           </button>
           <Link 
-            href={`/products/${product.id}`}
+            href={`/products/${product.slug || product.id}`}
             className="w-full bg-stone-50 text-stone-500 py-3 rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-stone-100 transition-all border border-stone-100 active:scale-95 text-center"
           >
             Détails & Ingrédients

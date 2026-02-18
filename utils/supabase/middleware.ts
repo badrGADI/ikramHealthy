@@ -31,18 +31,22 @@ export async function updateSession(request: NextRequest) {
   // getUser(). A simple mistake could make it very hard to debug
   // issues with users being logged out.
 
+  const { pathname } = request.nextUrl;
+  const isLoginPath = pathname === '/admin/login' || pathname.startsWith('/admin/login/');
+  const isAuthPath = pathname.startsWith('/auth');
+
+  if (isLoginPath || isAuthPath) {
+    return supabaseResponse;
+  }
+
   const {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (
-    !user &&
-    !request.nextUrl.pathname.startsWith('/admin/login') &&
-    !request.nextUrl.pathname.startsWith('/auth')
-  ) {
-    // No user, potentially respond with 404 to hide the admin route
-    if (request.nextUrl.pathname.startsWith('/admin')) {
-        return new NextResponse('Not Found', { status: 404 });
+  if (!user) {
+    // No user, respond with 404 to hide the admin route
+    if (pathname.startsWith('/admin')) {
+      return new NextResponse('Not Found', { status: 404 });
     }
   }
 
